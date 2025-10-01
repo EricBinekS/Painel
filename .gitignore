@@ -1,0 +1,3 @@
+# Ignorar arquivos de sistema do Windows e macOS
+Thumbs.db
+.DS_Store
