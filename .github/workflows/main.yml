@@ -8,6 +8,9 @@ on:
     paths:
       - 'dados_brutos/**' # Roda sempre que um arquivo for alterado na pasta dados_brutos
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
