@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel PCM</title>
     <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,28 +17,28 @@
     <main>
         <section class="filters">
             <div class="filter-item">
-                <label for="data">Data:</label>
-                <input type="date" id="data">
+                <label for="filtro-data">Data:</label>
+                <input type="date" id="filtro-data">
             </div>
             <div class="filter-item">
-                <label for="gerencia">Gerencia:</label>
-                <input type="text" id="gerencia">
+                <label for="filtro-gerencia">Gerencia:</label>
+                <select id="filtro-gerencia" multiple></select>
             </div>
             <div class="filter-item">
-                <label for="trecho">Trecho:</label>
-                <input type="text" id="trecho">
+                <label for="filtro-trecho">Trecho:</label>
+                <select id="filtro-trecho" multiple></select>
             </div>
             <div class="filter-item">
-                <label for="ativo">Ativo:</label>
-                <input type="text" id="ativo">
+                <label for="filtro-ativo">Ativo:</label>
+                <select id="filtro-ativo" multiple></select>
             </div>
             <div class="filter-item">
-                <label for="atividade">Atividade:</label>
-                <input type="text" id="atividade">
+                <label for="filtro-atividade">Atividade:</label>
+                <select id="filtro-atividade" multiple></select>
             </div>
             <div class="filter-item">
-                <label for="tipo">Tipo:</label>
-                <input type="text" id="tipo">
+                <label for="filtro-tipo">Tipo:</label>
+                <select id="filtro-tipo" multiple></select>
             </div>
         </section>
 
@@ -45,6 +46,7 @@
     </main>
     
     <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
