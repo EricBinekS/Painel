@@ -1,4 +1,3 @@
-/* Estilos Globais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
@@ -29,7 +28,6 @@ main {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Filtros */
 .filters {
     display: flex;
     gap: 20px;
@@ -54,7 +52,6 @@ main {
     padding: 6px;
 }
 
-/* Estilos para a Tabela (Grid.js) */
 #tabela-wrapper .gridjs-head {
     background-color: transparent;
 }
@@ -64,19 +61,22 @@ main {
     color: #333;
     text-align: center !important;
     padding: 12px !important;
+    white-space: pre;
 }
 
-/* Cores dos cabeçalhos baseadas no mockup */
+#tabela-wrapper .gridjs-td {
+    text-align: center;
+}
+
 #tabela-wrapper .gridjs-th.col-identificador { background-color: #5b9bd5; color: white; }
 #tabela-wrapper .gridjs-th.col-tempo { background-color: #c5e0b3; color: #333; }
 #tabela-wrapper .gridjs-th.col-local { background-color: #c5e0b3; color: #333; }
 #tabela-wrapper .gridjs-th.col-quantidade { background-color: #c5e0b3; color: #333; }
 #tabela-wrapper .gridjs-th.col-detalhamento { background-color: #f8cbac; color: #333; }
 
-/* Estilo para o timer rodando */
 .timer-running {
     font-weight: bold;
-    color: #d9534f; /* Vermelho */
+    color: #d9534f;
     animation: pulse 1.5s infinite;
 }
 
