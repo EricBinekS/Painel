@@ -27,7 +27,7 @@ function calculateRealTime(startTime, endTime, endTime8, endTime10) {
 
 async function carregarET_AtualizarTabela() {
     try {
-        const response = await fetch(`../data.json?v=${new Date().getTime()}`);
+        const response = await fetch(`data.json?v=${new Date().getTime()}`);
         fullData = await response.json();
 
         if (!grid) {
@@ -103,7 +103,7 @@ async function carregarET_AtualizarTabela() {
         }
 
     } catch (error) {
-        console.error('Erro:', error);
+        console.error('Erro ao carregar ou atualizar a tabela:', error);
     }
 }
 
